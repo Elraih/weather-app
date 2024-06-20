@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --bg-clr: rgb(39, 81, 117);
+}
+
+/* ============ global end  ================ */
+
+/* ================= home start ================================ */
+
+.home {
+    background-image: linear-gradient(rgba(78, 141, 160, 0.7), rgba(0, 186, 233, 0.7));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.home form {
+    margin: auto;
+    width: 60%;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+}
+
+.home .city-search {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px rgb(228, 228, 228) solid;
+    background: rgba(126, 126, 126, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 3px 0;
+    color: #ffffff;
+}
+
+.home .search-btn {
+    position: absolute;
+    right: 5px;
+    top: 10%;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 80%;
+    color: var(--bg-clr);
+}
+
+.inner {
+    background: rgba(126, 126, 126, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 3px 0;
+    border-radius: 20px;
+    padding: 1.25rem;
+    color: rgb(255, 255, 255);
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards .inner .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards .inner h3 {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.cards .inner .weather {
+    display: flex;
+    align-items: center;
+}
+
+.cards .inner .weather p {
+    margin: 0;
+}
+
+.cards .inner ul {
+    display: flex;
+    align-items: center;
+}
+
+.cards .inner ul li {
+    margin-right: 0.9375rem;
+}
+
+.cards .inner ul span {
+    margin-left: 0.3125rem;
+}
+
+/* =================== home section end ====================== */
+
+/* ================ footer start ======================== */
+footer {
+    background-color: var(--bg-clr);
+    padding-block: 30px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+footer .container>* {
+    width: 50%;
+}
+
+footer .container .form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .container button {
+    width: 19%;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+}
+
+footer .container .footer-input {
+    width: 79%;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+}
+
+footer .container .footer-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .footer-li a {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .container>* {
+        width: 100%;
+    }
+}
+
+/* ================== footer end ================ */
